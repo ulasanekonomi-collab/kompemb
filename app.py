@@ -3,9 +3,9 @@ import pandas as pd
 import numpy as np
 
 # Konfigurasi Halaman Utama
-st.set_page_config(page_title="Konvergen.id - Komunikasi Pembangunan", layout="wide")
+st.set_page_config(page_title="Komunikasi Pembangunan", layout="wide")
 
-st.title("🎯 Konvergen.id")
+st.title("Analisis Komunikasi Pembangunan Ekonomi")
 st.subheader("Platform Konvergensi Alur Komunikasi Kebijakan Pembangunan")
 
 # Teks Atribusi Pengembang
