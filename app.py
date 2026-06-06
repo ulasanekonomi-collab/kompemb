@@ -7,6 +7,10 @@ st.set_page_config(page_title="Konvergen.id - Komunikasi Pembangunan", layout="w
 
 st.title("🎯 Konvergen.id")
 st.subheader("Platform Konvergensi Alur Komunikasi Kebijakan Pembangunan")
+
+# Teks Atribusi Pengembang
+st.info("**Dikembangkan Oleh:** Yuhka Sundaya, Ekonomi Pembangunan, Unisba, 2026.")
+
 st.write("---")
 
 # Sidebar untuk Navigasi Alur
@@ -14,6 +18,10 @@ menu = st.sidebar.radio(
     "Pilih Alur Komunikasi:",
     ["Dasbor Konvergensi", "Alur 1: Pengujian Kebijakan (Top-Down)", "Alur 2: Translasi Suara Publik (Bottom-Up)"]
 )
+
+# Tambahan atribusi di sidebar bawah
+st.sidebar.write("---")
+st.sidebar.caption("© 2026 Yuhka Sundaya | Unisba")
 
 # -------------------------------------------------------------
 # MENU 1: DASBOR UTAMA
@@ -52,12 +60,12 @@ elif menu == "Alur 1: Pengujian Kebijakan (Top-Down)":
     if st.button("Uji Potensi Distorsi Narasi"):
         st.write("### 🔍 Hasil Analisis Risiko Komunikasi")
         
-        # Simulasi deteksi parameter dari gambar blueprint
-        st.warning("**⚠️ Temuan Risiko Tinggi:** Penggunaan kata 'Ketidakpastian Meningkat' berpotensi diterjemahkan publik sebagai 'Ekonomi Sedang Krisis! Tarik dana sekarang!'")
+        # Simulasi deteksi parameter risiko
+        st.warning("**⚠️ Temuan Risiko Tinggi:** Penggunaan kata 'Ketidakpastian Meningkat' berpotensi diterjemahkan publik sebagai 'Ekonomi Sedang Krisis! Lebih baik tarik dana sekarang!'")
         
         st.write("### 📢 Rekomendasi Strategi Saluran & Segmentasi Pesan:")
         
-        # Tabel Rekomendasi Segmentasi berdasarkan image_2bfca5.jpg
+        # Tabel Rekomendasi Segmentasi
         data_rekomendasi = {
             "Kelompok Sasaran": ["Kelas Menengah", "Pelaku UMKM", "Buruh / Pekerja"],
             "Potensi Respon Psikologis": ["Menahan konsumsi & pindah ke instrumen aman", "Sakit kepala karena biaya pinjaman naik", "Mengurangi pengeluaran harian secara drastis"],
